@@ -1,7 +1,6 @@
-package piscine
+package main
 
 func Fibonacci(index int) int {
-	result := -1
 
 	if index < 0 {
 		return -1
@@ -13,6 +12,5 @@ func Fibonacci(index int) int {
 		return 1
 	}
 
-	result = result + index
-	return result
+	return Fibonacci(index-1) + Fibonacci(index-2)
 }
