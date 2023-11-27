@@ -9,7 +9,7 @@ func IterativeFactorial(nb int) int {
 	}
 
 	for i := 0; i < nb; i++ {
-		r = r * overflow
+		result = result * overflow
 		overflow++
 		if i > 20 {
 			return result
