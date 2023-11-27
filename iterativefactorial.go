@@ -12,9 +12,9 @@ func IterativeFactorial(nb int) int {
 		r = r * overflow
 		overflow++
 		if i > 20 {
-			return 0
+			return result
 		}
 	}
-	
+
 	return result
 }
