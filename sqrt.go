@@ -5,10 +5,13 @@ func Sqrt(nb int) int {
     if nb < 0 {
         return 0
     }
-    for result*result <= nb {
+
+	for result*result <= nb {
         if result*result == nb {
             return result
         }
         result++
     }
+	
+	return result
 }
